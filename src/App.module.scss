@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+header {
+  background-color: var(--color-primary);
+  height: 80px;
+  a {
+    margin: auto 0;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}
+
+main {
+  @extend .container;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

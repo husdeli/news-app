@@ -1,0 +1,8 @@
+.list {
+  list-style: none;
+  padding: 10px 10px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px;
+  grid-auto-rows: min-content;
+}
