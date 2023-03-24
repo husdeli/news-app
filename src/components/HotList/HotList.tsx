@@ -12,7 +12,7 @@ export function HotList({ newsList }: Props) {
       {newsList.map((news) => (
         <li key={news.id}>
           <div className="caption">
-            <span>{news.date.toLocaleDateString()}</span>
+            <span>{news.date.toLocaleDateString()}</span>{" "}
             <span>{news.date.toLocaleTimeString()}</span>
           </div>
           <a href="#">{news.title}</a>

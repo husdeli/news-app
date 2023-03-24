@@ -13,7 +13,7 @@ export function useNews() {
     (a, b) => b.popularity - a.popularity
   );
   const hotNews = [...(data || [])].sort(
-    (a, b) => b.date.getMilliseconds() - a.date.getMilliseconds()
+    (a, b) => b.date.getTime() - a.date.getTime()
   );
 
   const mostPopularNews = popularNews[0] || null;
