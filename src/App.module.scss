@@ -23,3 +23,15 @@ main {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

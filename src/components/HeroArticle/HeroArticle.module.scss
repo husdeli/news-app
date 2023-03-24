@@ -1,7 +1,6 @@
 .imageContainer {
   position: relative;
-  width: 600px;
-  height: 400px;
+  max-width: 600px;
   img {
     border-radius: 5px;
     max-width: 100%;
