@@ -1,8 +1,13 @@
 # News-app⚡
 
+## Install
+- Install NodeJS (https://nodejs.org/en)
+- Install dependencies by running `npm i`  in the project directory.
+
 ## Run application
 
 ### Development
+
 
 - To start the backend server, open your terminal and type `npm run start:server` in the project directory.
 
