@@ -1,5 +1,4 @@
-import { HeroArticle, PopularList } from "../components";
-import { HotList } from "../components/HotList";
+import { HeroArticle, PopularList, HotList } from "../components";
 import { useNews } from "../hooks";
 
 import styles from "./Index.module.scss";
