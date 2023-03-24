@@ -3,7 +3,7 @@ import { adaptGetNewsResponse } from "../adapters";
 import { fetchNews } from "../data";
 
 export function useNews() {
-  const { data } = useQuery({
+  const { data, isError, isLoading } = useQuery({
     queryKey: ["news"],
     queryFn: () => fetchNews().then(adaptGetNewsResponse)
   });
@@ -22,6 +22,8 @@ export function useNews() {
   return {
     mostPopularNews,
     restNews,
-    hotNews
+    hotNews,
+    isError,
+    isLoading
   };
 }

@@ -11,11 +11,26 @@
   gap: 20px;
 }
 
+.loader {
+  display: flex;
+  margin: auto;
+  animation: logo-spin infinite 2s linear;
+}
+
 @media screen and (max-width: 768px) {
   .page {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
     gap: 10px;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
