@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  server:
+    command: ["node", "./server.js"]
+    container_name: news-app-server
+    build:
+      context: .
+      dockerfile: ./src/server/Dockerfile
+    ports:
+      - ${PORT}:${PORT}
+    env_file:
+      - .env

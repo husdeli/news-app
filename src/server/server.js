@@ -1,18 +1,20 @@
 import csv from "csv-parser";
 import express from "express";
+import serveStatic from "serve-static";
 import cors from "cors";
 import { default as iconv } from "iconv-lite";
 import { createReadStream } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const app = express();
 const port = parseInt(process.env.PORT || "3000", 10);
 
 app.use(cors());
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+app.use(serveStatic(join(__dirname, "dist")));
 
 const results = [];
 
