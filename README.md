@@ -22,9 +22,9 @@ After that the app will run on port 3000 by default. It can be accessed using th
 
 ## Testing (TODO)
 
-### Cover the app with unit tests
+### Cover the app with unit tests (TODO)
 
-### Cover the most intricate parts of the app with integration and e2e tests
+### Cover the most intricate parts of the app with integration and e2e tests (TODO)
 
 Possible test cases:
 - Popular news
